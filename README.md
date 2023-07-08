@@ -4,7 +4,16 @@
 
 ```sh
 $ git clone https://github.com/screw-hand/gum.git
+# use npm or pnpm
 $ npm link .
+$ pnpm link --global
+```
+
+# Uninstall
+
+```sh
+# Whether you use pnpm or pnm depends on how you install
+$ (p)npm rm -g @screw-hand/gum
 ```
 
 ## Example
