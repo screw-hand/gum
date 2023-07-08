@@ -91,6 +91,7 @@ function onSet(groupName, options) {
 function onUse(groupName, options) {
   const { allInfo } = getAllConfigInfo();
   const user = allInfo[groupName];
+  const isGlobal = options.global || options.g;
 
   if (!shell.which('git')) {
     shell.echo('Sorry, this script requires git');

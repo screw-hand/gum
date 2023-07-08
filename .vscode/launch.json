@@ -1,0 +1,39 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "gum",
+      "runtimeExecutable": "gum",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "gum list",
+      "runtimeExecutable": "gum",
+      // "runtimeArgs": ["help"],
+      "runtimeArgs": ["list"],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "gum set udf --global",
+      "runtimeExecutable": "gum",
+      // "runtimeArgs": ["help"],
+      "runtimeArgs": ["use", "udf", "--global"],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+    }
+  ]
+}
