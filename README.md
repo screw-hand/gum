@@ -3,7 +3,8 @@
 ## Install
 
 ```sh
-$ npm i -g @gauseen/gum
+$ git clone https://github.com/screw-hand/gum.git
+$ npm link .
 ```
 
 ## Example
@@ -33,21 +34,30 @@ Currently used name=li si email=lisi@gmail.com
 Usage: gum [options] [command]
 
 Options:
-  -V, --version               output the version number
-  -h, --help                  display help for command
+  -V, --version                 output the version number
+  -h, --help                    display help for command
 
 Commands:
-  list                        List all the user config group
-  set [options] <group-name>  Set one group for user config
-    --name                    User name
-    --email                   User email
-  use [options] <group-name>  Use one group name for user config
-    --global                  Git global config
-  delete <group-name>         Delete one group
-  help [command]              display help for command
+  list|ls                       List all the user config group
+  set|s [options] <group-name>  Set one group for user config
+  use|u [options] <group-name>  Use one group name for user config
+  delete|del <group-name>       Delete one group
+  help [command]                display help for command
+```
+
+## Dev
+
+```sh
+$ git clone https://github.com/screw-hand/gum.git
+$ pnpm link .
 ```
 
 ## Change Log
+
+### v1.0.6
+
+- feat: Suport `gum list` use show the 
+- feat: Suport alias command
 
 ### v1.0.5
 
