@@ -30,7 +30,7 @@
       "name": "gum set udf --global",
       "runtimeExecutable": "gum",
       // "runtimeArgs": ["help"],
-      "runtimeArgs": ["use", "udf", "--global"],
+      "runtimeArgs": ["set", "udf", "--name", "undefind", "--email", "null@mail.com"],
       "skipFiles": [
         "<node_internals>/**"
       ],
