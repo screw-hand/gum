@@ -9,31 +9,23 @@
       "request": "launch",
       "name": "gum",
       "runtimeExecutable": "gum",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
+      "skipFiles": ["<node_internals>/**"]
     },
     {
       "type": "node",
       "request": "launch",
       "name": "gum list",
       "runtimeExecutable": "gum",
-      // "runtimeArgs": ["help"],
       "runtimeArgs": ["list"],
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
+      "skipFiles": ["<node_internals>/**"]
     },
     {
       "type": "node",
       "request": "launch",
-      "name": "gum set udf --global",
+      "name": "gum set user1 --name lisi --email lisi@gmail.com",
       "runtimeExecutable": "gum",
-      // "runtimeArgs": ["help"],
-      "runtimeArgs": ["set", "udf", "--name", "undefind", "--email", "null@mail.com"],
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
+      "runtimeArgs": ["set", "user1", "--name", "lisi", "--email", "lisi@gmail.com"],
+      "skipFiles": ["<node_internals>/**"]
     }
   ]
 }
