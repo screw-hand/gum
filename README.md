@@ -1,25 +1,30 @@
 # Git multiple user config manager
 
-## Install
+## Intall or Dev
 
 ```sh
-$ git clone https://github.com/screw-hand/gum.git
-# use npm or pnpm
-$ npm link .
-$ pnpm link --global
+git clone git@github.com:screw-hand/gum.git
+cd gum
+git remote add upstream git@github.com:gauseen/gum.git
+git remote -vv
+git fetch --all
+git branch master upstream/master
+pnpm i
+pnpm link --global
+# if you need the uninstall, Seel the #Uninstall chapter
 ```
 
 # Uninstall
 
 ```sh
 # Whether you use pnpm or pnm depends on how you install
-$ (p)npm rm -g @screw-hand/gum
+(p)npm rm -g @screw-hand/gum
 ```
 
 ## Example
 
 ```sh
-$ gum list
+gum list
 
 Currently used name=gauseen email=gauseen@gmail.com
 ┌────────────┬─────────┬─────────────────────────┐
@@ -32,7 +37,7 @@ Currently used name=gauseen email=gauseen@gmail.com
 ```
 
 ```sh
-$ gum use user1
+gum use user1
 
 Currently used name=li si email=lisi@gmail.com
 ```
@@ -52,13 +57,6 @@ Commands:
   use|u [options] <group-name>  Use one group name for user config
   delete|del <group-name>       Delete one group
   help [command]                display help for command
-```
-
-## Dev
-
-```sh
-$ git clone https://github.com/screw-hand/gum.git
-$ pnpm link .
 ```
 
 ## Change Log
